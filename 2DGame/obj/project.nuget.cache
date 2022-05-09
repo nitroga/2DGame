@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "HdFT30UB/xE6Qza40TsyAP/S1NokWIgKNTk9CcOX3yIe+c2YBQq5IngWd5Foyh6HWLuoAGs8B3L97HBs9BQIug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sundvisson.alexande\\Documents\\vscode\\2DGame\\2DGame\\2DGame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sundvisson.alexande\\.nuget\\packages\\raylib-cs\\3.7.0.1\\raylib-cs.3.7.0.1.nupkg.sha512",
+    "C:\\Users\\sundvisson.alexande\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
