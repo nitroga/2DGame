@@ -49,24 +49,8 @@ while (!Raylib.WindowShouldClose())
     collisions.Clear();
     yspeed*= 0.95;
     xspeed*= 0.95;
-    if (Raylib.IsKeyDown(KeyboardKey.KEY_W))
-    {
-        yspeed = 1.5;
-    }
-    if (Raylib.IsKeyDown(KeyboardKey.KEY_S))
-    {
-        yspeed = -1.5;
-    }
 
-    if (Raylib.IsKeyDown(KeyboardKey.KEY_D))
-    {
-        xspeed = -1.5;
-    }
-
-    if (Raylib.IsKeyDown(KeyboardKey.KEY_A))
-    {   
-        xspeed = 1.5;
-    }
+    (xspeed, yspeed) = movement(xspeed, yspeed);
 
     if (Raylib.IsKeyPressed(KeyboardKey.KEY_E)) {
         inv = !inv;
@@ -170,4 +154,26 @@ void checkCollisions() {
                 health = new Rectangle(85, 35, playerHealth, 20);
             }
         }
+    }
+
+    static (double, double) movement(double xspeed, double yspeed) {
+        if (Raylib.IsKeyDown(KeyboardKey.KEY_W))
+    {
+        yspeed = 1.5;
+    }
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_S))
+    {
+        yspeed = -1.5;
+    }
+
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_D))
+    {
+        xspeed = -1.5;
+    }
+
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_A))
+    {   
+        xspeed = 1.5;
+    }
+    return (xspeed, yspeed);
     }
